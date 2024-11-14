@@ -1,0 +1,6 @@
+pydub
+gradio
+numpy
+pandas
+sentence_transformers
+git+https://github.com/openai/whisper.git
