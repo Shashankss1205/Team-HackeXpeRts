@@ -1,3 +1,6 @@
+# @Ownership of this code solely lies with Shashank Shekhar Singh, and any part of this code
+# copied must be explicitly stated. Thank You!!
+
 import gradio as gr
 from pydub import AudioSegment
 import numpy as np
@@ -62,56 +65,3 @@ with gr.Blocks() as demo:
 # Launch the app
 demo.launch(share=True)
 # demo.launch()
-
-
-
-
-
-
-
-
-
-
-
-
-# import gradio as gr
-# from pydub import AudioSegment
-# import numpy as np
-# from io import BytesIO
-
-# # Simulated function to fetch audio from a "database"
-# def get_audio_from_database():
-#     # Replace with actual database retrieval logic
-#     return "/home/shashank/Desktop/ml_fiest/Dataset/SandalWoodNewsStories_2.mp3"  # Example path to an audio file
-
-# # Define the function that takes the user-recorded audio and returns database audio
-# def process_audio(user_audio):
-#     # Process the user audio if needed
-#     # Here we’re just passing it through without saving for demonstration purposes
-
-#     # Get the database audio
-#     db_audio_path = get_audio_from_database()
-#     db_audio_segment = AudioSegment.from_file(db_audio_path)
-
-#     # Convert db audio to numpy array and sample rate
-#     buffer = BytesIO()
-#     db_audio_segment.export(buffer, format="wav")
-#     buffer.seek(0)
-#     db_audio = np.frombuffer(buffer.read(), dtype=np.int16)
-
-#     # Return the database audio as a response
-#     return (db_audio_segment.frame_rate, db_audio)
-
-# # Set up the Gradio interface
-# with gr.Blocks() as demo:
-#     gr.Markdown("### Record your audio and play a sample from the database.")
-    
-#     # Define microphone input and audio output without `source` argument
-#     mic = gr.Audio(type="numpy", label="Record Your Audio")
-#     output_audio = gr.Audio(label="Database Audio Response")
-    
-#     # Connect the function with Gradio components
-#     mic.change(process_audio, inputs=mic, outputs=output_audio)
-
-# # Launch the app
-# demo.launch(share=True)
