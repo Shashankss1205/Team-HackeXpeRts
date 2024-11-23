@@ -11,7 +11,7 @@ The task involves:
 2. Implementing a speech-based Question-Answering (QA) system to enable users to ask questions and receive relevant audio segments containing the answers.
 
 # Dataset Description
-The dataset comprises audio recordings in Kannada about sandalwood cultivation, scraped from YouTube, and supplied by the ML Fiesta Organizing Team. The colloquial nature of the recordings presents unique challenges for ASR due to informal vocabulary, idiomatic expressions, and background noise.
+The dataset comprises audio recordings in Kannada about sandalwood cultivation, scraped from YouTube, and supplied by the ML Fiesta Organizing Team. The colloquial nature of the recordings presents unique challenges for ASR due to informal vocabulary, idiomatic expressions, and background noise. The dataset generated is attached here: 'https://drive.google.com/drive/folders/13pQqEtSKuNXmrB4hio3x3gT2GULO7JiN?usp=sharing'
 
 # Task 1: Automatic Speech Recognition Model
 ## 4.1 Model Choice
